@@ -14,13 +14,39 @@ extension UINib {
     }
 }
 
+extension String {
+    static let USDAFoodDistributionProgram = "(Includes foods for USDA's Food Distribution Program)"
+}
+
 open class SearchResultTableCell: UITableViewCell {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelNumber: UILabel!
     @IBOutlet weak var labelGroup: UILabel!
+    @IBOutlet weak var viewFlag: UIView!
     
-    public func configure(for result: SearchResult) {
-        labelName.text = result.name
+    public func configure(for result: SearchResult, term: String? = nil) {
+        var foodName = result.name
+        
+        let range = (foodName as NSString).range(of: .USDAFoodDistributionProgram)
+        if range.location != NSNotFound {
+            foodName = (foodName as NSString).replacingCharacters(in: range, with: "")
+            viewFlag.isHidden = false
+        } else {
+            viewFlag.isHidden = true
+        }
+        if let term = term {
+            let attributed = NSMutableAttributedString(string: foodName)
+            let ranges = foodName.possibleRanges(for: term)
+            let font = UIFont.systemFont(ofSize: 20, weight: .medium)
+            let color = UIColor.darkText
+            ranges.forEach({
+                attributed.addAttributes([
+                    .font: font, .foregroundColor: color], range: $0)
+            })
+            labelName.attributedText = attributed
+        } else {
+            labelName.text = foodName
+        }
         labelGroup.text = result.group
         
         #if DEBUG
@@ -42,4 +68,37 @@ open class SearchResultTableCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+}
+
+extension String {
+    func possibleRanges(for term: String) -> [NSRange] {
+        guard term.count > 3 else { return [] }
+        var ranges: [NSRange] = []
+        
+        if term.rangeOfCharacter(from: .whitespaces) != nil { // multiple words
+            let words = term.components(separatedBy: .whitespaces)
+            words.forEach({ ranges += possibleRanges(for: $0) })
+        } else {
+            let line = self as NSString
+            var range = line.range(of: term)
+            if range.location != NSNotFound {
+                ranges.append(range)
+            } else {
+                range = line.range(of: term.lowercased())
+                if range.location != NSNotFound {
+                    ranges.append(range)
+                } else {
+                    range = line.range(of: term.capitalized)
+                    if range.location != NSNotFound {
+                        ranges.append(range)
+                    } else {
+                        let word = String(term.dropLast())
+                        ranges += possibleRanges(for: word)
+                    }
+                }
+            }
+        }
+        
+        return ranges
+    }
 }

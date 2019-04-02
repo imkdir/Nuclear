@@ -12,7 +12,7 @@ final public class NutrientAPI: NSObject {
     
     static internal var dataTask: URLSessionDataTask? = nil
     
-    static public func search(for group: FoodGroup, with term: String, completion: @escaping ([SearchResult]) -> Void) {
+    static public func search(with term: String, group: FoodGroup? = nil, completion: @escaping ([SearchResult]) -> Void) {
         let components = SearchURLComponents(term: term, group: group)
         guard let url = components.url else {
             return

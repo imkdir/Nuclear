@@ -8,9 +8,9 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "Term"
 
-class SearchTermsViewController: UICollectionViewController {
+final class SearchTermsViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

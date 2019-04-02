@@ -28,7 +28,7 @@ public struct SearchURLComponents {
     public var term: String
     
     /// Food group
-    public var group: FoodGroup
+    public var group: FoodGroup?
     
     /// Data source
     public var source: DataSource
@@ -56,15 +56,18 @@ public struct SearchURLComponents {
         
         let termQueryItem = URLQueryItem(name: "q", value: self.term)
         queryItems.append(termQueryItem)
-//        let groupQueryItem = URLQueryItem(name: "fg", value: self.group.id)
-//        queryItems.append(groupQueryItem)
+        
+        if let group = self.group {
+            let groupQueryItem = URLQueryItem(name: "fg", value: group.id)
+            queryItems.append(groupQueryItem)
+        }
         let sourceQueryItem = URLQueryItem(name: "ds", value: self.source.rawValue)
         queryItems.append(sourceQueryItem)
         let apiKeyQueryItem = URLQueryItem(name: "api_key", value: self.apiKey)
         queryItems.append(apiKeyQueryItem)
         let sortQueryItem = URLQueryItem(name: "sort", value: self.sort.rawValue)
         queryItems.append(sortQueryItem)
-        let maxQueryItem = URLQueryItem(name: "max", value: "500")
+        let maxQueryItem = URLQueryItem(name: "max", value: "50")
         queryItems.append(maxQueryItem)
         
         return queryItems
@@ -72,7 +75,7 @@ public struct SearchURLComponents {
 }
 
 extension SearchURLComponents {
-    public init(term: String, group: FoodGroup) {
+    public init(term: String, group: FoodGroup?) {
         self.init(term: term, group: group, source: .standardReference, sort: .relevance)
     }
 }
