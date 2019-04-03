@@ -26,6 +26,7 @@ final public class NutrientsViewController: UITableViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .done, target: self, action: #selector(doneButtonTapped))
+        navigationController?.navigationBar.tintColor = NutrientUI.tintColor
 
         tableView = UITableView(frame: .zero, style: .grouped)
         tableView.sectionHeaderHeight = 40
@@ -37,6 +38,7 @@ final public class NutrientsViewController: UITableViewController {
     private func doneButtonTapped() {
         let key = Nutrient.Group.proximate.rawValue
         delegate?.nutrient(controller: self, send: nutrients[key, default: []])
+        navigationController?.dismiss(animated: true)
     }
 
     // MARK: - Table view data source

@@ -10,6 +10,10 @@ import UIKit
 
 private let headerReuseIdentifier = "SearchHeader"
 
+public struct NutrientUI {
+    public static var tintColor: UIColor = #colorLiteral(red: 1, green: 0.1771841645, blue: 0.3328129351, alpha: 1)
+}
+
 final public class SearchViewController: UITableViewController {
     
     private var searchController: UISearchController!
@@ -26,7 +30,10 @@ final public class SearchViewController: UITableViewController {
         
         searchController = UISearchController(searchResultsController: resultsViewController)
 //        searchController.searchResultsUpdater = self
+        searchController.searchBar.placeholder = "Food Name"
         searchController.searchBar.autocapitalizationType = .none
+        searchController.searchBar.autocorrectionType = .yes
+        searchController.searchBar.tintColor = NutrientUI.tintColor
         
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
@@ -45,6 +52,7 @@ final public class SearchViewController: UITableViewController {
         
         if navigationController?.presentingViewController != nil {
             navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissIfPresented))
+            navigationController?.navigationBar.tintColor = NutrientUI.tintColor
         }
     }
     

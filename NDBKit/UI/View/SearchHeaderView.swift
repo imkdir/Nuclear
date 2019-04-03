@@ -23,7 +23,7 @@ final class SearchHeaderView: UITableViewHeaderFooterView {
         label.translatesAutoresizingMaskIntoConstraints = false
 
         button.setTitle("Clear", for: [.normal])
-        button.setTitleColor(button.tintColor, for: [.normal])
+        button.setTitleColor(NutrientUI.tintColor, for: [.normal])
         button.titleLabel!.font = UIFont.systemFont(ofSize: 15)
         button.translatesAutoresizingMaskIntoConstraints = false
         
