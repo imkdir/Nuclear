@@ -15,7 +15,7 @@ extension UINib {
 }
 
 extension String {
-    static let USDAFoodDistributionProgram = "(Includes foods for USDA's Food Distribution Program)"
+    public static let USDAFoodDistributionProgram = "(Includes foods for USDA's Food Distribution Program)"
 }
 
 open class SearchResultTableCell: UITableViewCell {
@@ -57,6 +57,9 @@ open class SearchResultTableCell: UITableViewCell {
     override open func awakeFromNib() {
         super.awakeFromNib()
         
+        let background = UIView()
+        background.backgroundColor = UIColor(white: 0, alpha: 0.06)
+        selectedBackgroundView = background
         #if DEBUG
         labelNumber.isHidden = false
         #endif

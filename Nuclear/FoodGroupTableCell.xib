@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="FoodGroupTableCell" customModule="Nuclear" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3U6-1u-8fV" userLabel="Container" customClass="GradientView" customModule="Nuclear" customModuleProvider="target">
+                        <rect key="frame" x="15" y="4" width="355" height="90"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits and Fruit Juices" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amp-BT-kqH">
+                                <rect key="frame" x="15" y="15" width="332" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="amp-BT-kqH" firstAttribute="leading" secondItem="3U6-1u-8fV" secondAttribute="leading" constant="15" id="6Pf-3U-7rq"/>
+                            <constraint firstAttribute="trailing" secondItem="amp-BT-kqH" secondAttribute="trailing" constant="8" id="Isq-1g-kX9"/>
+                            <constraint firstItem="amp-BT-kqH" firstAttribute="top" secondItem="3U6-1u-8fV" secondAttribute="top" constant="15" id="b4Z-ZL-IF6"/>
+                            <constraint firstAttribute="height" constant="90" id="uvl-5a-kpp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.9922052026" green="0.30661109089999999" blue="0.21258005499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.99374431370000005" green="0.42494773860000001" blue="0.3439139128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3U6-1u-8fV" secondAttribute="bottom" constant="4" id="FTU-8D-B4A"/>
+                    <constraint firstAttribute="trailing" secondItem="3U6-1u-8fV" secondAttribute="trailing" constant="15" id="ScY-g3-Shf"/>
+                    <constraint firstItem="3U6-1u-8fV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="hCX-e4-njA"/>
+                    <constraint firstItem="3U6-1u-8fV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="p45-ux-Ttx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelName" destination="amp-BT-kqH" id="D8i-cl-3qb"/>
+            </connections>
+            <point key="canvasLocation" x="184.78260869565219" y="151.00446428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

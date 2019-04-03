@@ -11,16 +11,25 @@
 		A642D6682250F3B7005D88A4 /* ReportResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642D6672250F3B7005D88A4 /* ReportResult.swift */; };
 		A642D66B2250FE7B005D88A4 /* SearchResultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642D6692250FE7B005D88A4 /* SearchResultTableCell.swift */; };
 		A642D66C2250FE7B005D88A4 /* SearchResultTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A642D66A2250FE7B005D88A4 /* SearchResultTableCell.xib */; };
-		A642D67722519291005D88A4 /* SearchTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642D67622519291005D88A4 /* SearchTermsViewController.swift */; };
-		A642D67D2251931A005D88A4 /* SearchTermCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642D67C2251931A005D88A4 /* SearchTermCollectionCell.swift */; };
 		A6C95922225338EB00520B51 /* FoodGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C95921225338EB00520B51 /* FoodGroup.swift */; };
 		A6C95939225343D000520B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C95938225343D000520B51 /* AppDelegate.swift */; };
-		A6C9593B225343D000520B51 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9593A225343D000520B51 /* SearchResultsViewController.swift */; };
 		A6C9593E225343D000520B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C9593C225343D000520B51 /* Main.storyboard */; };
 		A6C95940225343D200520B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C9593F225343D200520B51 /* Assets.xcassets */; };
 		A6C95943225343D200520B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C95941225343D200520B51 /* LaunchScreen.storyboard */; };
 		A6C9594A225351A900520B51 /* NDBKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E6C30F2250647800F6221F /* NDBKit.framework */; };
 		A6C9594B225351A900520B51 /* NDBKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6E6C30F2250647800F6221F /* NDBKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6C9595C2253B72400520B51 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9595B2253B72400520B51 /* FavoritesViewController.swift */; };
+		A6C9595F2253B74E00520B51 /* FoodGroupTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9595D2253B74E00520B51 /* FoodGroupTableCell.swift */; };
+		A6C959602253B74E00520B51 /* FoodGroupTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C9595E2253B74E00520B51 /* FoodGroupTableCell.xib */; };
+		A6C959622253B84A00520B51 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959612253B84A00520B51 /* GradientView.swift */; };
+		A6C959702254805500520B51 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9596322544D1400520B51 /* SearchViewController.swift */; };
+		A6C959712254805A00520B51 /* SearchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9596722545F9000520B51 /* SearchHistory.swift */; };
+		A6C959722254806000520B51 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9593A225343D000520B51 /* ResultsViewController.swift */; };
+		A6C959732254806600520B51 /* NutrientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9595522538E4100520B51 /* NutrientsViewController.swift */; };
+		A6C959742254806D00520B51 /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9596C2254718B00520B51 /* SearchHeaderView.swift */; };
+		A6C959752254809000520B51 /* NutrientTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C95957225390CB00520B51 /* NutrientTableCell.swift */; };
+		A6C959762254809400520B51 /* NutrientTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C95958225390CB00520B51 /* NutrientTableCell.xib */; };
+		A6C9597E225483AA00520B51 /* NutrientsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9597D225483AA00520B51 /* NutrientsViewControllerDelegate.swift */; };
 		A6E6C3142250647800F6221F /* NDBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E6C3122250647800F6221F /* NDBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6E6C31B225069CF00F6221F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6C31A225069CF00F6221F /* SearchResult.swift */; };
 		A6E6C31E22508E4600F6221F /* SearchURLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6C31D22508E4600F6221F /* SearchURLComponents.swift */; };
@@ -56,16 +65,25 @@
 		A642D6672250F3B7005D88A4 /* ReportResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportResult.swift; sourceTree = "<group>"; };
 		A642D6692250FE7B005D88A4 /* SearchResultTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableCell.swift; sourceTree = "<group>"; };
 		A642D66A2250FE7B005D88A4 /* SearchResultTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableCell.xib; sourceTree = "<group>"; };
-		A642D67622519291005D88A4 /* SearchTermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermsViewController.swift; sourceTree = "<group>"; };
-		A642D67C2251931A005D88A4 /* SearchTermCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermCollectionCell.swift; sourceTree = "<group>"; };
 		A6C95921225338EB00520B51 /* FoodGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGroup.swift; sourceTree = "<group>"; };
 		A6C95936225343D000520B51 /* Nuclear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nuclear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C95938225343D000520B51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6C9593A225343D000520B51 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		A6C9593A225343D000520B51 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		A6C9593D225343D000520B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6C9593F225343D200520B51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C95942225343D200520B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6C95944225343D200520B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C9595522538E4100520B51 /* NutrientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsViewController.swift; sourceTree = "<group>"; };
+		A6C95957225390CB00520B51 /* NutrientTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientTableCell.swift; sourceTree = "<group>"; };
+		A6C95958225390CB00520B51 /* NutrientTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutrientTableCell.xib; sourceTree = "<group>"; };
+		A6C9595B2253B72400520B51 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		A6C9595D2253B74E00520B51 /* FoodGroupTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGroupTableCell.swift; sourceTree = "<group>"; };
+		A6C9595E2253B74E00520B51 /* FoodGroupTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodGroupTableCell.xib; sourceTree = "<group>"; };
+		A6C959612253B84A00520B51 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		A6C9596322544D1400520B51 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A6C9596722545F9000520B51 /* SearchHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistory.swift; sourceTree = "<group>"; };
+		A6C9596C2254718B00520B51 /* SearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
+		A6C9597D225483AA00520B51 /* NutrientsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsViewControllerDelegate.swift; sourceTree = "<group>"; };
 		A6E6C30F2250647800F6221F /* NDBKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDBKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E6C3122250647800F6221F /* NDBKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDBKit.h; sourceTree = "<group>"; };
 		A6E6C3132250647800F6221F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,13 +122,84 @@
 			isa = PBXGroup;
 			children = (
 				A6C95938225343D000520B51 /* AppDelegate.swift */,
-				A6C9593A225343D000520B51 /* SearchResultsViewController.swift */,
+				A6C9595B2253B72400520B51 /* FavoritesViewController.swift */,
+				A6C959612253B84A00520B51 /* GradientView.swift */,
+				A6C9595D2253B74E00520B51 /* FoodGroupTableCell.swift */,
+				A6C9595E2253B74E00520B51 /* FoodGroupTableCell.xib */,
 				A6C9593C225343D000520B51 /* Main.storyboard */,
 				A6C9593F225343D200520B51 /* Assets.xcassets */,
 				A6C95941225343D200520B51 /* LaunchScreen.storyboard */,
 				A6C95944225343D200520B51 /* Info.plist */,
 			);
 			path = Nuclear;
+			sourceTree = "<group>";
+		};
+		A6C959772254827100520B51 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A6C9597A225482D800520B51 /* Controller */,
+				A6C9597B225482EA00520B51 /* View */,
+				A6C9597C2254830900520B51 /* Model */,
+				A6C9597F225483B000520B51 /* Protocol */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A6C959782254828500520B51 /* URLComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6C31D22508E4600F6221F /* SearchURLComponents.swift */,
+				A642D6652250F280005D88A4 /* ReportURLComponents.swift */,
+			);
+			path = URLComponents;
+			sourceTree = "<group>";
+		};
+		A6C95979225482B600520B51 /* Decodable */ = {
+			isa = PBXGroup;
+			children = (
+				A6C95921225338EB00520B51 /* FoodGroup.swift */,
+				A6E6C31A225069CF00F6221F /* SearchResult.swift */,
+				A642D6672250F3B7005D88A4 /* ReportResult.swift */,
+			);
+			path = Decodable;
+			sourceTree = "<group>";
+		};
+		A6C9597A225482D800520B51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6C9596322544D1400520B51 /* SearchViewController.swift */,
+				A6C9593A225343D000520B51 /* ResultsViewController.swift */,
+				A6C9595522538E4100520B51 /* NutrientsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6C9597B225482EA00520B51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6C9596C2254718B00520B51 /* SearchHeaderView.swift */,
+				A642D6692250FE7B005D88A4 /* SearchResultTableCell.swift */,
+				A642D66A2250FE7B005D88A4 /* SearchResultTableCell.xib */,
+				A6C95957225390CB00520B51 /* NutrientTableCell.swift */,
+				A6C95958225390CB00520B51 /* NutrientTableCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6C9597C2254830900520B51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6C9596722545F9000520B51 /* SearchHistory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6C9597F225483B000520B51 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A6C9597D225483AA00520B51 /* NutrientsViewControllerDelegate.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		A6E6C3052250647800F6221F = {
@@ -137,15 +226,9 @@
 			children = (
 				A6E6C3122250647800F6221F /* NDBKit.h */,
 				A6E6C3432250B8E700F6221F /* NutrientAPI.swift */,
-				A6C95921225338EB00520B51 /* FoodGroup.swift */,
-				A6E6C31A225069CF00F6221F /* SearchResult.swift */,
-				A642D6672250F3B7005D88A4 /* ReportResult.swift */,
-				A6E6C31D22508E4600F6221F /* SearchURLComponents.swift */,
-				A642D6652250F280005D88A4 /* ReportURLComponents.swift */,
-				A642D67622519291005D88A4 /* SearchTermsViewController.swift */,
-				A642D67C2251931A005D88A4 /* SearchTermCollectionCell.swift */,
-				A642D6692250FE7B005D88A4 /* SearchResultTableCell.swift */,
-				A642D66A2250FE7B005D88A4 /* SearchResultTableCell.xib */,
+				A6C95979225482B600520B51 /* Decodable */,
+				A6C959782254828500520B51 /* URLComponents */,
+				A6C959772254827100520B51 /* UI */,
 				A6E6C3132250647800F6221F /* Info.plist */,
 			);
 			path = NDBKit;
@@ -173,6 +256,7 @@
 				A6C95933225343D000520B51 /* Frameworks */,
 				A6C95934225343D000520B51 /* Resources */,
 				A6C9594C225351A900520B51 /* Embed Frameworks */,
+				A6C9596922546F8800520B51 /* Reveal */,
 			);
 			buildRules = (
 			);
@@ -247,6 +331,7 @@
 			files = (
 				A6C95943225343D200520B51 /* LaunchScreen.storyboard in Resources */,
 				A6C95940225343D200520B51 /* Assets.xcassets in Resources */,
+				A6C959602253B74E00520B51 /* FoodGroupTableCell.xib in Resources */,
 				A6C9593E225343D000520B51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,18 +341,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				A642D66C2250FE7B005D88A4 /* SearchResultTableCell.xib in Resources */,
+				A6C959762254809400520B51 /* NutrientTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6C9596922546F8800520B51 /* Reveal */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Reveal;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nREVEAL_APP_PATH=$(mdfind kMDItemCFBundleIdentifier=\"com.ittybittyapps.Reveal2\" | head -n 1)\nBUILD_SCRIPT_PATH=\"${REVEAL_APP_PATH}/Contents/SharedSupport/Scripts/reveal_server_build_phase.sh\"\nif [ \"${REVEAL_APP_PATH}\" -a -e \"${BUILD_SCRIPT_PATH}\" ]; then\n\"${BUILD_SCRIPT_PATH}\"\nelse\necho \"Reveal Server not loaded: Cannot find a compatible Reveal app.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6C95932225343D000520B51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C9593B225343D000520B51 /* SearchResultsViewController.swift in Sources */,
+				A6C9595F2253B74E00520B51 /* FoodGroupTableCell.swift in Sources */,
 				A6C95939225343D000520B51 /* AppDelegate.swift in Sources */,
+				A6C959622253B84A00520B51 /* GradientView.swift in Sources */,
+				A6C9595C2253B72400520B51 /* FavoritesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,15 +384,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C959722254806000520B51 /* ResultsViewController.swift in Sources */,
 				A6E6C31E22508E4600F6221F /* SearchURLComponents.swift in Sources */,
 				A6E6C31B225069CF00F6221F /* SearchResult.swift in Sources */,
-				A642D67722519291005D88A4 /* SearchTermsViewController.swift in Sources */,
+				A6C959712254805A00520B51 /* SearchHistory.swift in Sources */,
+				A6C9597E225483AA00520B51 /* NutrientsViewControllerDelegate.swift in Sources */,
 				A642D6682250F3B7005D88A4 /* ReportResult.swift in Sources */,
+				A6C959742254806D00520B51 /* SearchHeaderView.swift in Sources */,
+				A6C959702254805500520B51 /* SearchViewController.swift in Sources */,
+				A6C959752254809000520B51 /* NutrientTableCell.swift in Sources */,
 				A6E6C3442250B8E700F6221F /* NutrientAPI.swift in Sources */,
 				A642D6662250F280005D88A4 /* ReportURLComponents.swift in Sources */,
 				A642D66B2250FE7B005D88A4 /* SearchResultTableCell.swift in Sources */,
-				A642D67D2251931A005D88A4 /* SearchTermCollectionCell.swift in Sources */,
 				A6C95922225338EB00520B51 /* FoodGroup.swift in Sources */,
+				A6C959732254806600520B51 /* NutrientsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

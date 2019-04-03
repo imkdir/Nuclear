@@ -8,13 +8,23 @@
 
 import UIKit
 
+public enum NutrientAPIError : Error {
+    case noDataFound
+    case badURL
+}
+
 final public class NutrientAPI: NSObject {
     
     static internal var dataTask: URLSessionDataTask? = nil
     
-    static public func search(with term: String, group: FoodGroup? = nil, completion: @escaping ([SearchResult]) -> Void) {
+    static public func search(
+        with term: String,
+        group: FoodGroup? = nil,
+        completion: @escaping (Result<[SearchResult], NutrientAPIError>) -> Void) {
+        
         let components = SearchURLComponents(term: term, group: group)
         guard let url = components.url else {
+            completion(.failure(.badURL))
             return
         }
         dataTask?.cancel()
@@ -24,19 +34,26 @@ final public class NutrientAPI: NSObject {
             let decoder = JSONDecoder()
             do {
                 let unwrapped = try decoder.decode([String:SearchResponse].self, from: data)
-                let results = unwrapped["list"]?.item ?? []
-                completion(results)
+                guard let results = unwrapped["list"]?.item else {
+                    completion(.failure(.noDataFound))
+                    return
+                }
+                completion(.success(results))
             } catch {
-                completion([])
+                completion(.failure(.noDataFound))
                 print(error.localizedDescription)
             }
         }
         dataTask?.resume()
     }
     
-    static public func report(for ndbno: String, nutrientGroup: NutrientGroup, completion: @escaping ([Nutrient]) -> Void) {
+    static public func report(
+        for ndbno: String,
+        completion: @escaping (Result<[Nutrient], NutrientAPIError>) -> Void) {
+        
         let components = ReportURLComponents(ndbno: ndbno)
         guard let url = components.url else {
+            completion(.failure(.badURL))
             return
         }
         dataTask?.cancel()
@@ -47,16 +64,13 @@ final public class NutrientAPI: NSObject {
             do {
                 let reportResponse = try decoder.decode(ReportResponse.self, from: data)
                 guard let reportResult = reportResponse.foods.first else {
-                    completion([])
+                    completion(.failure(.noDataFound))
                     return
                 }
                 let nutrients = reportResult.food.nutrients
-                let group = { (param: Nutrient) -> Bool in
-                    nutrientGroup.identifiers.contains(param.nutrientId)
-                }
-                completion(nutrients.filter(group))
+                completion(.success(nutrients))
             } catch {
-                completion([])
+                completion(.failure(.noDataFound))
                 print(error.localizedDescription)
             }
         }
