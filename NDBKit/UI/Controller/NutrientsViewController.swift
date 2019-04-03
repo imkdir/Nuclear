@@ -24,12 +24,19 @@ final public class NutrientsViewController: UITableViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: nil, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .done, target: self, action: #selector(doneButtonTapped))
 
         tableView = UITableView(frame: .zero, style: .grouped)
         tableView.sectionHeaderHeight = 40
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(.nutrient, forCellReuseIdentifier: reuseIdentifier)
+    }
+    
+    @objc
+    private func doneButtonTapped() {
+        let key = Nutrient.Group.proximate.rawValue
+        delegate?.nutrient(controller: self, send: nutrients[key, default: []])
     }
 
     // MARK: - Table view data source

@@ -9,5 +9,5 @@
 import UIKit
 
 public protocol NutrientsViewControllerDelegate:class {
-    func nutrient(controller: NutrientsViewController, didSend nutrients: [Nutrient])
+    func nutrient(controller: NutrientsViewController, send nutrients: [Nutrient])
 }
