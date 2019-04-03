@@ -65,7 +65,7 @@ final public class SearchViewController: UITableViewController {
                     self.resultsViewController.results = results
                     self.resultsViewController.tableView.reloadData()
                 } else {
-                    
+                    // FIXME: handle failure case
                 }
             }
         })
@@ -104,7 +104,7 @@ extension SearchViewController {
                         self.navigationController?.pushViewController(vc, animated: true)
                     }
                 } else {
-                    print("Ono")
+                    // FIXME: handle failure case
                 }
             })
         }

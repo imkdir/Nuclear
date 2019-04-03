@@ -9,13 +9,13 @@
 import UIKit
 
 extension UINib {
-    public static var searchResult: UINib {
+    static var searchResult: UINib {
         return UINib(nibName: "SearchResultTableCell", bundle: Bundle(for: SearchResultTableCell.self))
     }
 }
 
 extension String {
-    public static let USDAFoodDistributionProgram = "(Includes foods for USDA's Food Distribution Program)"
+    static let USDAFoodDistributionProgram = "(Includes foods for USDA's Food Distribution Program)"
 }
 
 open class SearchResultTableCell: UITableViewCell {
@@ -30,7 +30,9 @@ open class SearchResultTableCell: UITableViewCell {
         let range = (foodName as NSString).range(of: .USDAFoodDistributionProgram)
         if range.location != NSNotFound {
             foodName = (foodName as NSString).replacingCharacters(in: range, with: "")
+            #if DEBUG
             viewFlag.isHidden = false
+            #endif
         } else {
             viewFlag.isHidden = true
         }
