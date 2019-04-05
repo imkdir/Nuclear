@@ -30,6 +30,7 @@
         <!--Nuclear-->
         <scene sceneID="fNg-XL-vdM">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8a-es-BhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="pvV-fC-W0F" customClass="SearchViewController" customModule="NDBKit" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="20H-7q-pVV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -42,7 +43,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Nuclear" id="wEL-RD-92n"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z8a-es-BhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2200.8000000000002" y="-187.55622188905548"/>
         </scene>
@@ -68,7 +68,8 @@
         <!--Favorites-->
         <scene sceneID="sDB-09-Suf">
             <objects>
-                <tableViewController id="7IN-kC-0js" customClass="FavoritesViewController" customModule="Nuclear" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xd8-Kt-3W7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="7IN-kC-0js" customClass="Form" customModule="NDBKit" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hRp-OP-MiO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,7 +81,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Favorites" id="BkY-Lt-gsK"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xd8-Kt-3W7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2202.4000000000001" y="518.59070464767615"/>
         </scene>

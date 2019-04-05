@@ -36,9 +36,12 @@ final public class NutrientsViewController: UITableViewController {
     
     @objc
     private func doneButtonTapped() {
+        defer {
+            navigationController?.dismiss(animated: true)
+        }
         let key = Nutrient.Group.proximate.rawValue
-        delegate?.nutrient(controller: self, send: nutrients[key, default: []])
-        navigationController?.dismiss(animated: true)
+        guard let group = nutrients[key] else { return }
+        delegate?.nutrient(controller: self, send: group.dictionary)
     }
 
     // MARK: - Table view data source
@@ -67,6 +70,23 @@ final public class NutrientsViewController: UITableViewController {
     override public func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         guard section == groups.count - 1 else { return nil }
         return "All nutrients' value are expressed in 100g."
+    }
+}
+
+extension String {
+    static var energy: String { return "208" }
+    static var protein: String { return "203" }
+    static var totalFat: String { return "204" }
+    static var carbohydrate: String { return "205" }
+}
+
+extension Array where Element == Nutrient {
+    var dictionary: [String: String] {
+        var dict: [String: String] = [:]
+        for each in self {
+            dict[each.nutrientId] = each.value
+        }
+        return dict
     }
 }
 

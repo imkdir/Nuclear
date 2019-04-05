@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NDBKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let bundle = Bundle(for: FormViewController.self)
+        let form = FormViewController(nibName: "FormViewController", bundle: bundle)
+        let nc = UINavigationController(rootViewController: form)
+        nc.navigationBar.prefersLargeTitles = UIScreen.main.bounds.width > 320
+        window.rootViewController = nc
+        window.backgroundColor = .white
+        window.makeKeyAndVisible()
+        self.window = window
         return true
     }
 
