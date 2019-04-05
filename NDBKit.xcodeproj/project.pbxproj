@@ -40,7 +40,7 @@
 		A6C959962257326C00520B51 /* FormViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959952257326C00520B51 /* FormViewControllerDelegate.swift */; };
 		A6C959982257396600520B51 /* IBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959972257396600520B51 /* IBButton.swift */; };
 		A6E2E7DA22575758006030F5 /* IBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2E7D922575758006030F5 /* IBView.swift */; };
-		A6E2E7DD22575C0D006030F5 /* TagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2E7DB22575C0D006030F5 /* TagCollectionCell.swift */; };
+		A6E2E7DD22575C0D006030F5 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2E7DB22575C0D006030F5 /* TagCollectionViewCell.swift */; };
 		A6E2E7E12257968E006030F5 /* InventoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2E7DF2257968E006030F5 /* InventoryTableCell.swift */; };
 		A6E2E7E22257968E006030F5 /* InventoryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E2E7E02257968E006030F5 /* InventoryTableCell.xib */; };
 		A6E6C3142250647800F6221F /* NDBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E6C3122250647800F6221F /* NDBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -107,7 +107,7 @@
 		A6C959952257326C00520B51 /* FormViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewControllerDelegate.swift; sourceTree = "<group>"; };
 		A6C959972257396600520B51 /* IBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBButton.swift; sourceTree = "<group>"; };
 		A6E2E7D922575758006030F5 /* IBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBView.swift; sourceTree = "<group>"; };
-		A6E2E7DB22575C0D006030F5 /* TagCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionCell.swift; sourceTree = "<group>"; };
+		A6E2E7DB22575C0D006030F5 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		A6E2E7DF2257968E006030F5 /* InventoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableCell.swift; sourceTree = "<group>"; };
 		A6E2E7E02257968E006030F5 /* InventoryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InventoryTableCell.xib; sourceTree = "<group>"; };
 		A6E6C30F2250647800F6221F /* NDBKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDBKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,9 +213,9 @@
 				A6C9596C2254718B00520B51 /* SearchHeaderView.swift */,
 				A6C959862255E09C00520B51 /* FormHeaderView.swift */,
 				A6C959892255E34100520B51 /* FormEntityView.swift */,
+				A6E2E7DB22575C0D006030F5 /* TagCollectionViewCell.swift */,
 				A6E2E7DF2257968E006030F5 /* InventoryTableCell.swift */,
 				A6E2E7E02257968E006030F5 /* InventoryTableCell.xib */,
-				A6E2E7DB22575C0D006030F5 /* TagCollectionCell.swift */,
 				A642D6692250FE7B005D88A4 /* SearchResultTableCell.swift */,
 				A642D66A2250FE7B005D88A4 /* SearchResultTableCell.xib */,
 				A6C95957225390CB00520B51 /* NutrientTableCell.swift */,
@@ -442,7 +442,7 @@
 				A6E2E7E12257968E006030F5 /* InventoryTableCell.swift in Sources */,
 				A6C959702254805500520B51 /* SearchViewController.swift in Sources */,
 				A6C959752254809000520B51 /* NutrientTableCell.swift in Sources */,
-				A6E2E7DD22575C0D006030F5 /* TagCollectionCell.swift in Sources */,
+				A6E2E7DD22575C0D006030F5 /* TagCollectionViewCell.swift in Sources */,
 				A6E6C3442250B8E700F6221F /* NutrientAPI.swift in Sources */,
 				A642D6662250F280005D88A4 /* ReportURLComponents.swift in Sources */,
 				A6C9598A2255E34100520B51 /* FormEntityView.swift in Sources */,

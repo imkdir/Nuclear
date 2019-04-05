@@ -30,7 +30,7 @@ public class FormViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.register(TagCollectionCell.self, forCellWithReuseIdentifier: "Tag")
+        collectionView.register(TagCollectionViewCell.self, forCellWithReuseIdentifier: "Tag")
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleNotification), name: .entityTextFieldDidBeginEditing, object: nil)
         
@@ -161,7 +161,7 @@ extension FormViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Tag", for: indexPath) as! TagCollectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Tag", for: indexPath) as! TagCollectionViewCell
         let tag = tags[indexPath.item]
         cell.configure(for: tag)
         return cell

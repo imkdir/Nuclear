@@ -1,5 +1,5 @@
 //
-//  TagCollectionCell.swift
+//  TagCollectionViewCell.swift
 //  NDBKit
 //
 //  Created by Tung CHENG on 2019/4/5.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class TagCollectionCell: UICollectionViewCell {
+final class TagCollectionViewCell: UICollectionViewCell {
     fileprivate let labelTag = UILabel()
     
     func configure(for tag: String) {
