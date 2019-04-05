@@ -8,19 +8,28 @@
 
 import UIKit
 
-extension UINib {
-    static let tagCell = UINib(nibName: "TagCollectionCell", bundle: Bundle(for: TagCollectionCell.self))
-}
-
 final class TagCollectionCell: UICollectionViewCell {
-    @IBOutlet weak var labelTag: UILabel!
+    fileprivate let labelTag = UILabel()
     
     func configure(for tag: String) {
         labelTag.text = tag
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = .clear
+        
+        contentView.addSubview(labelTag)
+        
+        labelTag.textAlignment = .center
+        labelTag.font = UIFont.systemFont(ofSize: 40)
+        labelTag.translatesAutoresizingMaskIntoConstraints = false
+        labelTag.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        labelTag.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override var isSelected: Bool {

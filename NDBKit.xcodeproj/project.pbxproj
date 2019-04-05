@@ -41,7 +41,6 @@
 		A6C959982257396600520B51 /* IBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959972257396600520B51 /* IBButton.swift */; };
 		A6E2E7DA22575758006030F5 /* IBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2E7D922575758006030F5 /* IBView.swift */; };
 		A6E2E7DD22575C0D006030F5 /* TagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2E7DB22575C0D006030F5 /* TagCollectionCell.swift */; };
-		A6E2E7DE22575C0D006030F5 /* TagCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E2E7DC22575C0D006030F5 /* TagCollectionCell.xib */; };
 		A6E2E7E12257968E006030F5 /* InventoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2E7DF2257968E006030F5 /* InventoryTableCell.swift */; };
 		A6E2E7E22257968E006030F5 /* InventoryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E2E7E02257968E006030F5 /* InventoryTableCell.xib */; };
 		A6E6C3142250647800F6221F /* NDBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E6C3122250647800F6221F /* NDBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -109,7 +108,6 @@
 		A6C959972257396600520B51 /* IBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBButton.swift; sourceTree = "<group>"; };
 		A6E2E7D922575758006030F5 /* IBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBView.swift; sourceTree = "<group>"; };
 		A6E2E7DB22575C0D006030F5 /* TagCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionCell.swift; sourceTree = "<group>"; };
-		A6E2E7DC22575C0D006030F5 /* TagCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionCell.xib; sourceTree = "<group>"; };
 		A6E2E7DF2257968E006030F5 /* InventoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableCell.swift; sourceTree = "<group>"; };
 		A6E2E7E02257968E006030F5 /* InventoryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InventoryTableCell.xib; sourceTree = "<group>"; };
 		A6E6C30F2250647800F6221F /* NDBKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDBKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,7 +216,6 @@
 				A6E2E7DF2257968E006030F5 /* InventoryTableCell.swift */,
 				A6E2E7E02257968E006030F5 /* InventoryTableCell.xib */,
 				A6E2E7DB22575C0D006030F5 /* TagCollectionCell.swift */,
-				A6E2E7DC22575C0D006030F5 /* TagCollectionCell.xib */,
 				A642D6692250FE7B005D88A4 /* SearchResultTableCell.swift */,
 				A642D66A2250FE7B005D88A4 /* SearchResultTableCell.xib */,
 				A6C95957225390CB00520B51 /* NutrientTableCell.swift */,
@@ -385,7 +382,6 @@
 				A642D66C2250FE7B005D88A4 /* SearchResultTableCell.xib in Resources */,
 				A6C959852255DFD100520B51 /* FormViewController.xib in Resources */,
 				A6E2E7E22257968E006030F5 /* InventoryTableCell.xib in Resources */,
-				A6E2E7DE22575C0D006030F5 /* TagCollectionCell.xib in Resources */,
 				A6C959762254809400520B51 /* NutrientTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

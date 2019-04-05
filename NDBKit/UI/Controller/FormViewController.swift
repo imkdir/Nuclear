@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let reuseIdentifier = "TagCollection"
-
 public class FormViewController: UIViewController {
     @IBOutlet weak var headerView: FormHeaderView!
     @IBOutlet weak var pickerView: UIPickerView!
@@ -32,7 +30,7 @@ public class FormViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.register(.tagCell, forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView.register(TagCollectionCell.self, forCellWithReuseIdentifier: "Tag")
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleNotification), name: .entityTextFieldDidBeginEditing, object: nil)
         
@@ -163,7 +161,7 @@ extension FormViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! TagCollectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Tag", for: indexPath) as! TagCollectionCell
         let tag = tags[indexPath.item]
         cell.configure(for: tag)
         return cell
