@@ -13,13 +13,23 @@ extension UINib {
 }
 
 public struct FoodInfo {
-    let name: String
-    let tag: String
-    let size: String
-    let energy: String
-    let fat: String
-    let protein: String
-    let carbs: String
+    public let name: String
+    public let tag: String
+    public let size: String
+    public let energy: String
+    public let fat: String
+    public let protein: String
+    public let carbs: String
+    
+    public init(name: String, tag: String, size: String, energy: String, fat: String, protein: String, carbs: String) {
+        self.name = name
+        self.tag = tag
+        self.size = size
+        self.energy = energy
+        self.fat = fat
+        self.protein = protein
+        self.carbs = carbs
+    }
 }
 
 public class InventoryTableCell: UITableViewCell {
