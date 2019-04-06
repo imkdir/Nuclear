@@ -9,10 +9,10 @@
 import UIKit
 
 public struct NutrientInfo {
-    let energy: String?
-    let fat: String?
-    let protein: String?
-    let carbs: String?
+    public let energy: String?
+    public let fat: String?
+    public let protein: String?
+    public let carbs: String?
 }
 
 public protocol NutrientsViewControllerDelegate:class {
