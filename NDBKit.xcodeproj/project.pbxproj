@@ -29,20 +29,6 @@
 		A6C959752254809000520B51 /* NutrientTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C95957225390CB00520B51 /* NutrientTableCell.swift */; };
 		A6C959762254809400520B51 /* NutrientTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C95958225390CB00520B51 /* NutrientTableCell.xib */; };
 		A6C9597E225483AA00520B51 /* NutrientsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9597D225483AA00520B51 /* NutrientsViewControllerDelegate.swift */; };
-		A6C959842255DFD100520B51 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959822255DFD100520B51 /* FormViewController.swift */; };
-		A6C959852255DFD100520B51 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C959832255DFD100520B51 /* FormViewController.xib */; };
-		A6C959872255E09C00520B51 /* FormHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959862255E09C00520B51 /* FormHeaderView.swift */; };
-		A6C959882255E10500520B51 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959612253B84A00520B51 /* GradientView.swift */; };
-		A6C9598A2255E34100520B51 /* FormEntityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959892255E34100520B51 /* FormEntityView.swift */; };
-		A6C9598C22560CE900520B51 /* FormContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9598B22560CE900520B51 /* FormContainerView.swift */; };
-		A6C95992225653DB00520B51 /* EntityPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C95991225653DB00520B51 /* EntityPickerCell.swift */; };
-		A6C959942256EE8C00520B51 /* IBTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959932256EE8C00520B51 /* IBTextFeild.swift */; };
-		A6C959962257326C00520B51 /* FormViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959952257326C00520B51 /* FormViewControllerDelegate.swift */; };
-		A6C959982257396600520B51 /* IBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C959972257396600520B51 /* IBButton.swift */; };
-		A6E2E7DA22575758006030F5 /* IBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2E7D922575758006030F5 /* IBView.swift */; };
-		A6E2E7DD22575C0D006030F5 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2E7DB22575C0D006030F5 /* TagCollectionViewCell.swift */; };
-		A6E2E7E12257968E006030F5 /* InventoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2E7DF2257968E006030F5 /* InventoryTableCell.swift */; };
-		A6E2E7E22257968E006030F5 /* InventoryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E2E7E02257968E006030F5 /* InventoryTableCell.xib */; };
 		A6E6C3142250647800F6221F /* NDBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E6C3122250647800F6221F /* NDBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6E6C31B225069CF00F6221F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6C31A225069CF00F6221F /* SearchResult.swift */; };
 		A6E6C31E22508E4600F6221F /* SearchURLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6C31D22508E4600F6221F /* SearchURLComponents.swift */; };
@@ -92,24 +78,10 @@
 		A6C9595B2253B72400520B51 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		A6C9595D2253B74E00520B51 /* FoodGroupTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGroupTableCell.swift; sourceTree = "<group>"; };
 		A6C9595E2253B74E00520B51 /* FoodGroupTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodGroupTableCell.xib; sourceTree = "<group>"; };
-		A6C959612253B84A00520B51 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A6C9596322544D1400520B51 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A6C9596722545F9000520B51 /* SearchHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistory.swift; sourceTree = "<group>"; };
 		A6C9596C2254718B00520B51 /* SearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
 		A6C9597D225483AA00520B51 /* NutrientsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsViewControllerDelegate.swift; sourceTree = "<group>"; };
-		A6C959822255DFD100520B51 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
-		A6C959832255DFD100520B51 /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
-		A6C959862255E09C00520B51 /* FormHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FormHeaderView.swift; path = NDBKit/UI/View/FormHeaderView.swift; sourceTree = SOURCE_ROOT; };
-		A6C959892255E34100520B51 /* FormEntityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormEntityView.swift; sourceTree = "<group>"; };
-		A6C9598B22560CE900520B51 /* FormContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormContainerView.swift; sourceTree = "<group>"; };
-		A6C95991225653DB00520B51 /* EntityPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityPickerCell.swift; sourceTree = "<group>"; };
-		A6C959932256EE8C00520B51 /* IBTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBTextFeild.swift; sourceTree = "<group>"; };
-		A6C959952257326C00520B51 /* FormViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewControllerDelegate.swift; sourceTree = "<group>"; };
-		A6C959972257396600520B51 /* IBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBButton.swift; sourceTree = "<group>"; };
-		A6E2E7D922575758006030F5 /* IBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBView.swift; sourceTree = "<group>"; };
-		A6E2E7DB22575C0D006030F5 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
-		A6E2E7DF2257968E006030F5 /* InventoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableCell.swift; sourceTree = "<group>"; };
-		A6E2E7E02257968E006030F5 /* InventoryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InventoryTableCell.xib; sourceTree = "<group>"; };
 		A6E6C30F2250647800F6221F /* NDBKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDBKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E6C3122250647800F6221F /* NDBKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDBKit.h; sourceTree = "<group>"; };
 		A6E6C3132250647800F6221F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,8 +167,6 @@
 				A6C9596322544D1400520B51 /* SearchViewController.swift */,
 				A6C9593A225343D000520B51 /* ResultsViewController.swift */,
 				A6C9595522538E4100520B51 /* NutrientsViewController.swift */,
-				A6C959822255DFD100520B51 /* FormViewController.swift */,
-				A6C959832255DFD100520B51 /* FormViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,18 +174,7 @@
 		A6C9597B225482EA00520B51 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A6E2E7D922575758006030F5 /* IBView.swift */,
-				A6C959972257396600520B51 /* IBButton.swift */,
-				A6C959932256EE8C00520B51 /* IBTextFeild.swift */,
-				A6C959612253B84A00520B51 /* GradientView.swift */,
-				A6C9598B22560CE900520B51 /* FormContainerView.swift */,
-				A6C95991225653DB00520B51 /* EntityPickerCell.swift */,
 				A6C9596C2254718B00520B51 /* SearchHeaderView.swift */,
-				A6C959862255E09C00520B51 /* FormHeaderView.swift */,
-				A6C959892255E34100520B51 /* FormEntityView.swift */,
-				A6E2E7DB22575C0D006030F5 /* TagCollectionViewCell.swift */,
-				A6E2E7DF2257968E006030F5 /* InventoryTableCell.swift */,
-				A6E2E7E02257968E006030F5 /* InventoryTableCell.xib */,
 				A642D6692250FE7B005D88A4 /* SearchResultTableCell.swift */,
 				A642D66A2250FE7B005D88A4 /* SearchResultTableCell.xib */,
 				A6C95957225390CB00520B51 /* NutrientTableCell.swift */,
@@ -236,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				A6C9597D225483AA00520B51 /* NutrientsViewControllerDelegate.swift */,
-				A6C959952257326C00520B51 /* FormViewControllerDelegate.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -380,8 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A642D66C2250FE7B005D88A4 /* SearchResultTableCell.xib in Resources */,
-				A6C959852255DFD100520B51 /* FormViewController.xib in Resources */,
-				A6E2E7E22257968E006030F5 /* InventoryTableCell.xib in Resources */,
 				A6C959762254809400520B51 /* NutrientTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,30 +380,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C959982257396600520B51 /* IBButton.swift in Sources */,
 				A6C959722254806000520B51 /* ResultsViewController.swift in Sources */,
 				A6E6C31E22508E4600F6221F /* SearchURLComponents.swift in Sources */,
 				A6E6C31B225069CF00F6221F /* SearchResult.swift in Sources */,
-				A6C959842255DFD100520B51 /* FormViewController.swift in Sources */,
-				A6C95992225653DB00520B51 /* EntityPickerCell.swift in Sources */,
 				A6C959712254805A00520B51 /* SearchHistory.swift in Sources */,
-				A6C959962257326C00520B51 /* FormViewControllerDelegate.swift in Sources */,
-				A6C959882255E10500520B51 /* GradientView.swift in Sources */,
 				A6C9597E225483AA00520B51 /* NutrientsViewControllerDelegate.swift in Sources */,
 				A642D6682250F3B7005D88A4 /* ReportResult.swift in Sources */,
-				A6C959872255E09C00520B51 /* FormHeaderView.swift in Sources */,
-				A6C959942256EE8C00520B51 /* IBTextFeild.swift in Sources */,
-				A6E2E7DA22575758006030F5 /* IBView.swift in Sources */,
 				A6C959742254806D00520B51 /* SearchHeaderView.swift in Sources */,
-				A6E2E7E12257968E006030F5 /* InventoryTableCell.swift in Sources */,
 				A6C959702254805500520B51 /* SearchViewController.swift in Sources */,
 				A6C959752254809000520B51 /* NutrientTableCell.swift in Sources */,
-				A6E2E7DD22575C0D006030F5 /* TagCollectionViewCell.swift in Sources */,
 				A6E6C3442250B8E700F6221F /* NutrientAPI.swift in Sources */,
 				A642D6662250F280005D88A4 /* ReportURLComponents.swift in Sources */,
-				A6C9598A2255E34100520B51 /* FormEntityView.swift in Sources */,
 				A642D66B2250FE7B005D88A4 /* SearchResultTableCell.swift in Sources */,
-				A6C9598C22560CE900520B51 /* FormContainerView.swift in Sources */,
 				A6C95922225338EB00520B51 /* FoodGroup.swift in Sources */,
 				A6C959732254806600520B51 /* NutrientsViewController.swift in Sources */,
 			);

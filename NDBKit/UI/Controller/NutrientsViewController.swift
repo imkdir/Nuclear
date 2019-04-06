@@ -41,7 +41,8 @@ final public class NutrientsViewController: UITableViewController {
         }
         let key = Nutrient.Group.proximate.rawValue
         guard let group = nutrients[key] else { return }
-        delegate?.nutrient(controller: self, send: group.dictionary)
+        let info = NutrientInfo(dict: group.dictionary)
+        delegate?.nutrient(controller: self, send: info)
     }
 
     // MARK: - Table view data source
@@ -73,11 +74,20 @@ final public class NutrientsViewController: UITableViewController {
     }
 }
 
+extension NutrientInfo {
+    init(dict: [String: String]) {
+        self.energy = dict[.energy]
+        self.protein = dict[.protein]
+        self.fat = dict[.fat]
+        self.carbs = dict[.carbs]
+    }
+}
+
 extension String {
     static var energy: String { return "208" }
     static var protein: String { return "203" }
-    static var totalFat: String { return "204" }
-    static var carbohydrate: String { return "205" }
+    static var fat: String { return "204" }
+    static var carbs: String { return "205" }
 }
 
 extension Array where Element == Nutrient {

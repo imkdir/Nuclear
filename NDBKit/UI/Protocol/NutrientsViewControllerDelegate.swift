@@ -8,6 +8,13 @@
 
 import UIKit
 
+public struct NutrientInfo {
+    let energy: String?
+    let fat: String?
+    let protein: String?
+    let carbs: String?
+}
+
 public protocol NutrientsViewControllerDelegate:class {
-    func nutrient(controller: NutrientsViewController, send nutrients: [String: String])
+    func nutrient(controller: NutrientsViewController, send nutrients: NutrientInfo)
 }
