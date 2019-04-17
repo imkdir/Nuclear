@@ -61,11 +61,12 @@ final public class SearchViewController: UITableViewController {
     
         NutrientAPI.search(with: searchTerm, completion: { result in
             DispatchQueue.main.async {
-                if case .success(let results) = result {
+                switch result {
+                case .success(let results):
                     self.resultsViewController.results = results
-                    self.resultsViewController.tableView.reloadData()
-                } else {
-                    // FIXME: handle failure case
+                case .failure(let error):
+                    self.resultsViewController.showError()
+                    print(error.localizedDescription)
                 }
             }
         })
@@ -94,7 +95,8 @@ extension SearchViewController {
         } else {
             let food = resultsViewController.results[indexPath.row]
             NutrientAPI.report(for: food.ndbno, completion: { result in
-                if case .success(let nutrients) = result {
+                switch result {
+                case .success(let nutrients):
                     DispatchQueue.main.async {
                         let vc = NutrientsViewController()
                         vc.title = "Nutrition Facts"
@@ -103,8 +105,8 @@ extension SearchViewController {
                         vc.nutrients = nutrients.group(by: { $0.group })
                         self.navigationController?.pushViewController(vc, animated: true)
                     }
-                } else {
-                    // FIXME: handle failure case
+                case .failure(let error):
+                    print(error.localizedDescription)
                 }
             })
         }

@@ -12,17 +12,24 @@ private let reuseIdentifier = "Result"
 
 final class ResultsViewController: UITableViewController {
     
-    private var loadingIndicator: UIActivityIndicatorView!
+    private let loadingIndicator = UIActivityIndicatorView(style: .gray)
+    private let labelNotFound = UILabel()
     
     var results: [SearchResult] = [] {
         didSet {
-            self.loadingIndicator.stopAnimating()
+            tableView.reloadData()
+            loadingIndicator.stopAnimating()
+            labelNotFound.isHidden = true
         }
     }
     var searchTerm: String! {
         didSet {
             self.loadingIndicator.startAnimating()
         }
+    }
+    func showError() {
+        labelNotFound.isHidden = false
+        loadingIndicator.stopAnimating()
     }
     
     override func viewDidLoad() {
@@ -32,12 +39,30 @@ final class ResultsViewController: UITableViewController {
         tableView.tableFooterView = UIView(frame: .zero)
         tableView.register(UINib.searchResult, forCellReuseIdentifier: reuseIdentifier)
         
-        loadingIndicator = UIActivityIndicatorView(style: .gray)
         view.addSubview(loadingIndicator)
         loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
         loadingIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         loadingIndicator.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
+        
+        view.addSubview(labelNotFound)
+        labelNotFound.translatesAutoresizingMaskIntoConstraints = false
+        labelNotFound.textColor = UIColor(white: 0, alpha: 0.7)
+        labelNotFound.font = .systemFont(ofSize: 15)
+        labelNotFound.textAlignment = .center
+        labelNotFound.numberOfLines = 0
+        labelNotFound.attributedText = attributedNotFound
+        labelNotFound.isHidden = true
+        
+        labelNotFound.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+        labelNotFound.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
     }
+    
+    private lazy var attributedNotFound: NSAttributedString = {
+        let mutable = NSMutableAttributedString(attributedString:
+            .init(string: "No Results", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .medium)]))
+        mutable.append(.init(string: "\nCheck your network connection and try again."))
+        return mutable
+    }()
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return results.count
