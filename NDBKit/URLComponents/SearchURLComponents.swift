@@ -76,6 +76,6 @@ public struct SearchURLComponents {
 
 extension SearchURLComponents {
     public init(term: String, group: FoodGroup?) {
-        self.init(term: term, group: group, source: .standardReference, sort: .relevance)
+        self.init(term: term, group: group, source: .standardReference, sort: .foodName)
     }
 }

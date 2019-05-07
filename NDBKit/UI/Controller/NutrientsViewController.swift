@@ -69,7 +69,7 @@ final public class NutrientsViewController: UITableViewController {
     }
 
     override public func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        guard section == groups.count - 1 else { return nil }
+        guard section == 0 else { return nil }
         return "All nutrients' value are expressed in 100g."
     }
 }
