@@ -40,7 +40,7 @@ open class SearchResultTableCell: UITableViewCell {
             let attributed = NSMutableAttributedString(string: foodName)
             let ranges = foodName.possibleRanges(for: term)
             let font = UIFont.systemFont(ofSize: 20, weight: .medium)
-            let color = UIColor.darkText
+            let color = UIColor.systemBlue
             ranges.forEach({
                 attributed.addAttributes([
                     .font: font, .foregroundColor: color], range: $0)
@@ -65,12 +65,6 @@ open class SearchResultTableCell: UITableViewCell {
         #if DEBUG
         labelNumber.isHidden = false
         #endif
-    }
-
-    override open func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }

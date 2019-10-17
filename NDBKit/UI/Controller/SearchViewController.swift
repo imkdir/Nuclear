@@ -42,7 +42,11 @@ final public class SearchViewController: UITableViewController {
         searchController.searchBar.delegate = self
         
         tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.backgroundColor = .white
+        if #available(iOS 13.0, *) {
+            tableView.backgroundColor = .systemBackground
+        } else {
+            tableView.backgroundColor = .white
+        }
         tableView.sectionHeaderHeight = 60
         tableView.separatorInset = .init(top: 0, left: 15, bottom: 0, right: 0)
         tableView.tableFooterView = UIView(frame: .zero)
